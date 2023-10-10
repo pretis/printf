@@ -1346,6 +1346,8 @@ static inline void format_string_loop(output_gadget_t* output, const char* forma
         break;
     }
   }
+
+  putchar_via_gadget(output, (char) '\0');
 }
 
 // internal vsnprintf - used for implementing _all library functions
